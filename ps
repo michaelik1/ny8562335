@@ -1,3 +1,5 @@
 Set Sh = CreateObject("WScript.Shell")
 
-Sh.Run "powershell -NoProfile -ExecutionPolicy Bypass -Command ""Set-Content -Path ~\Desktop\happy_new_year.txt -Value "Some text"""", 0
+cmd = "powershell -NoProfile -ExecutionPolicy Bypass -Command ""Set-Content -Path $env:USERPROFILE\Desktop\happy_new_year.txt -Value 'Happy New Year!'"""
+
+Sh.Run cmd, 0
