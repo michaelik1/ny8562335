@@ -1,6 +1,1 @@
 MsgBox "Loaded"
-Set Sh = CreateObject("WScript.Shell")
-
-cmd = "powershell -NoProfile -ExecutionPolicy Bypass -Command ""Set-Content -Path $env:USERPROFILE\Desktop\happy_new_year.txt -Value 'Happy New Year!'"""
-
-Sh.Run cmd, 0
